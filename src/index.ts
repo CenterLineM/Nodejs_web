@@ -5,6 +5,11 @@ import path from 'path';
 import appRouter from './app/app.routing';
 
 
+// 資料庫
+import { Database } from './database';
+Database.connect();
+
+
 const app = express();
 
 app.get('/', (req, res, next) => {
