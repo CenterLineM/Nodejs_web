@@ -1,4 +1,5 @@
 import express from 'express';
+import { UserModel } from '../models/user';
 const router =express.Router();
 
 // Get 瀏覽器呼叫
@@ -21,3 +22,7 @@ router.post('/test', express.json(), (req, res, next) => {
   
 
 export default router;
+
+
+
+
